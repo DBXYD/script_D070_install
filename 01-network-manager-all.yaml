@@ -1,0 +1,22 @@
+# Let NetworkManager manage all devices on this system
+network:  
+  version: 2
+  renderer: NetworkManager
+  ethernets:
+    enp0s25:
+      addresses: [10.10.2.81/23]
+      gateway4: 10.10.2.250
+      nameservers:
+        search: [ensea.fr]
+        addresses: [10.10.2.251, 193.51.46.142]
+
+## d070-pc1.ensea.fr has address 10.10.2.81
+## d070-pc2.ensea.fr has address 10.10.2.82
+## d070-pc3.ensea.fr has address 10.10.2.83
+## d070-pc4.ensea.fr has address 10.10.2.84
+## d070-pc5.ensea.fr has address 10.10.2.85
+## d070-pc6.ensea.fr has address 10.10.2.86
+## d070-pc7.ensea.fr has address 10.10.2.87
+## d070-pc8.ensea.fr has address 10.10.2.88
+## d070-pc9.ensea.fr has address 10.10.2.89
+## d070-pc10.ensea.fr has address 10.10.2.90
